@@ -68,7 +68,8 @@ namespace EvoltisChallenge.Services
             usuarioExistente.Nombre = string.IsNullOrWhiteSpace(usuarioDto.Nombre) ? usuarioExistente.Nombre : usuarioDto.Nombre;
             usuarioExistente.Email = string.IsNullOrWhiteSpace(usuarioDto.Email) ? usuarioExistente.Email : usuarioDto.Email;
 
-            await _domicilioService.UpdateAsync(id, usuarioDto.Domicilio);
+            if (usuarioDto.Domicilio != null)
+                await _domicilioService.UpdateAsync(id, usuarioDto.Domicilio);
 
             var usuarioActualizado = await _repository.UpdateAsync(usuarioExistente);
             return _mapper.Map<UsuarioResponseDto>(usuarioActualizado);

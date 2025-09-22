@@ -40,7 +40,7 @@ namespace EvoltisChallenge.Controllers
         /// <summary>
         /// Busca usuarios por nombre y/o provincia/ciudad
         /// </summary>
-        /// <param name="searchDto">Criterios de búsqueda</param>
+        /// <param name="searchDto">Criterios de bï¿½squeda</param>
         /// <returns>Lista de usuarios que coinciden con los criterios</returns>
         [HttpPost("search")]
         public async Task<ActionResult<IEnumerable<UsuarioResponseDto>>> Search([FromBody] SearchUsuarioDto searchDto)
@@ -121,7 +121,7 @@ namespace EvoltisChallenge.Controllers
         /// Elimina un usuario
         /// </summary>
         /// <param name="id">ID del usuario a eliminar</param>
-        /// <returns>Resultado de la operación</returns>
+        /// <returns>Resultado de la operaciï¿½n</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

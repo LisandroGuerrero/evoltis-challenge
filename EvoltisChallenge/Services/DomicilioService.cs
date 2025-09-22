@@ -71,7 +71,7 @@ namespace EvoltisChallenge.Services
 
             var domicilioExistente = await _repository.GetByUsuarioIdAsync(usuarioId);
             if (domicilioExistente == null)
-            { 
+            {
                 domicilioExistente = new Domicilio
                 {
                     UsuarioID = usuarioId,
