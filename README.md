@@ -10,17 +10,22 @@ Modificar el ConnectionString dentro de `appsettings.json` para que coincida con
 	},
 ```
 
-Nos posicionamos sobre el directorio del proyecto principal
+* Nos posicionamos sobre el directorio del proyecto principal
 `cd [path_del_proyecto]/EvoltisChallenge/`
-Restauramos los paquetes
+
+* Restauramos los paquetes
 `dotnet restore`
-Buildeamos el proyecto
+
+* Buildeamos el proyecto
 `dotnet build`
-Aplicamos la migración de la base de datos
+
+* Aplicamos la migración de la base de datos
 `dotnet ef database update`
-Ejecutamos las pruebas
+
+* Ejecutamos las pruebas
 `dotnet test`
-Ejecutamos la API
+
+* Ejecutamos la API
 `dotnet run`
 
-La documentación de la API se encuentra en: http://localhost:5292/index.html
+#### La documentación de la API se encuentra en: http://localhost:5292/index.html
